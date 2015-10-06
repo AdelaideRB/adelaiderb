@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+- '2.2'
+sudo: false
+cache: bundler
+matrix:
+  fast_finish: true
+before_install:
+- 'cp config/database.yml.example config/database.yml'
+- 'cp config/secrets.yml.example config/secrets.yml'
+script:
+- bundle exec rake
