@@ -1,0 +1,47 @@
+$home-border-color: #ccc;
+
+.homepage {
+  h1, h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .row {
+    border-bottom: 2px solid $home-border-color;
+
+    @media(max-width: 768px) {
+      div:not(:last-child) {
+        border-bottom: 2px solid $home-border-color;
+      }
+    }
+  }
+
+  .heading {
+    height: 250px;
+    color: white;
+    background: #03325A;
+  }
+
+  .where-when {
+    background: #f6f6f6;
+
+    .infobox {
+      margin: 0 auto 15px;
+      width: 220px;
+      padding: 5px;
+      border: 1px dashed #ccc;
+      background: #fff;
+    }
+    p {
+      text-align: left;
+    }
+  }
+
+  .info {
+  }
+
+  ul {
+    list-style: none;
+    text-align: left;
+  }
+}

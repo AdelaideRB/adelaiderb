@@ -14,3 +14,21 @@
  *= require_self
  *= require vendor
  */
+
+.ct {
+  text-align: center;
+}
+
+a {
+  color: #000;
+  &:hover, &:visited {
+    color: #000;
+    background: none;
+  }
+}
+
+.half-width {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}

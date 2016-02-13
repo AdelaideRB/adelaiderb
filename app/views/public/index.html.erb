@@ -1,0 +1,50 @@
+<div class="homepage">
+  <div class="row ct heading">
+    <div class="col-xs-12">
+      <h1>Adelaide.RB</h1>
+      <h3>Adelaide Ruby Meetup</h3>
+      <p>
+        Where Rubyists from Adelaide come together to talk, socialise and share solutions
+        and problems they are facing
+      </p>
+      <%= link_to 'Meetup Page', 'http://www.meetup.com/adelaiderb/',
+        class: 'btn btn-warning' %>
+      <%= link_to 'Github', 'https://github.com/AdelaideRB',
+        class: 'btn btn-warning' %>
+    </div>
+  </div>
+
+  <div class="row ct where-when">
+    <div class="col-xs-12 col-sm-6">
+      <h2>Next Meeting</h2>
+      <div class="infobox">
+        <%= next_meetup %>
+      </div>
+      <p>
+        The Adelaide Ruby team meets up on the first Tuesday of every month
+        welcoming everyone to attend.
+        Adelaide.rb is the place where Ruby lovers meet. Whether you are an experienced
+        Rails developer or just want to find out why Ruby is so freaking awesome, come
+        along. You'll meet some new people and maybe even learn a thing or two.
+      </p>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+      <h2>Where</h2>
+      <div class="infobox">
+        <%= link_to 'https://goo.gl/maps/M13CY2tg4GC2' do %>
+          Majoran CoWorking Space
+        <% end %>
+      </div>
+      <p class="col-xs-12 col-md-9">
+        The Adelaide.Rb meetup is supported by the Majoran co-working space where
+        you will find many of our members working from.
+      </p>
+      <p class="col-xs-12 col-md-3">
+        Level 2, 14 Grenfell St<br />
+        Adelaide<br />
+        SA 5000
+      </p>
+    </div>
+  </div>
+</div>
